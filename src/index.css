@@ -1,3 +1,7 @@
+@tailwind base;
+/* @tailwind components; */
+@tailwind utilities;
+
 @font-face {
   font-family: "Recoleta";
   src: url(assets/font/Recoleta-Regular.woff2) format("woff2"),
@@ -27,13 +31,9 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   min-height: 100%;
-  color: #333;
+  color: black;
   background-color: #ededed;
   margin: 0;
   font-family: Arial, sans-serif;
