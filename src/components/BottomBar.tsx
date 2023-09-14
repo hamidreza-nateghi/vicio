@@ -1,36 +1,21 @@
 import "./BottomBar.css";
+import FooterLink from "./FooterLink";
 
 function BottomBar() {
   return (
-    <div className="bottom-bar">
-      <div className="container">
-        <div className="footer">
-          <div className="footer-left-links">
-            <a href="/" className="footer-link-block">
-              <div>
-                <div className="footer-link-text">Collection</div>
-                <div className="footer-link-line"></div>
-              </div>
-            </a>
-            <a href="/" className="footer-link-block">
-              <div>
-                <div className="footer-link-text">About us</div>
-                <div className="footer-link-line"></div>
-              </div>
-            </a>
-          </div>
-          <div className="footer-right-links">
-            <div className="footer-right-collection">Presskit</div>
-            <a className="w-inline-block">
-              <div className="footer-ig-wrapper">
-                <div className="link-footer-ig"></div>
-                <div className="link-footer-arrow"></div>
-              </div>
-            </a>
-          </div>
-        </div>
+    <footer className="container fixed w-full bottom-0 flex justify-between items-center">
+      <div className="flex footer-left-links">
+        <FooterLink>Collection</FooterLink>
+        <FooterLink>About us</FooterLink>
       </div>
-    </div>
+      <div className="footer-right-links flex items-end">
+        <div className="footer-right-collection">Presskit</div>
+        <a className="footer-ig-wrapper card">
+          <div className="link-footer-icon bg-[url('assets/icon-instagram.svg')] bg-no-repeat bg-contain"></div>
+          <div className="link-footer-icon bg-[url('assets/arrow.svg')] bg-no-repeat bg-contain"></div>
+        </a>
+      </div>
+    </footer>
   );
 }
 

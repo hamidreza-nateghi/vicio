@@ -1,0 +1,12 @@
+.footer-link-block {
+  text-decoration: none;
+}
+
+.footer-link-text {
+  font-size: 1.51vh;
+  line-height: 1.83vh;
+}
+
+.footer-link-line {
+  height: 0.2vh;
+}

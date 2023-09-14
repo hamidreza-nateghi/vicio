@@ -1,7 +1,6 @@
-import { ReactNode } from "react";
 import "./ActionButton.css";
 
-function ActionButton({ children }: { children?: ReactNode }) {
+function ActionButton({ children }: { children?: React.ReactNode }) {
   return (
     <a
       href="/pide-ya"
