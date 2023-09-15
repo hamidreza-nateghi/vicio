@@ -2,6 +2,26 @@
 /* @tailwind components; */
 @tailwind utilities;
 
+.bg-arrow {
+  @apply bg-contain bg-[url('assets/arrow.svg')];
+}
+
+.bg-star {
+  @apply bg-contain bg-[url('assets/icon-star.svg')] bg-center absolute;
+}
+
+.text-block {
+  @apply text-[1.4vh] uppercase font-HelveticaNeueCondensed font-bold leading-[1.51vh];
+}
+
+.row {
+  @apply flex gap-[2.16vh];
+}
+
+.column {
+  @apply flex flex-col gap-[2.16vh];
+}
+
 @font-face {
   font-family: "Recoleta";
   src: url(assets/font/Recoleta-Regular.woff2) format("woff2"),
@@ -25,6 +45,12 @@
   src: url(assets/font/HelveticaNeue-CondensedBold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  background-repeat: no-repeat;
 }
 
 html {

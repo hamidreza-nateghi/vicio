@@ -1,29 +1,11 @@
-.viewport {
-  width: 100vw;
-  height: 100vh;
-  padding-top: 10.59vh;
-  padding-bottom: 10.59vh;
-  position: fixed;
-  overflow: scroll;
-}
-
 .main-content {
   width: 355.24vh;
   height: 100%;
   position: relative;
 }
 
-.row {
-  gap: 2.16vh;
-  justify-content: flex-start;
-  display: flex;
-}
-
-.column {
-  gap: 2.16vh;
-  flex-direction: column;
-  justify-content: flex-start;
-  display: flex;
+.burger-wrapper {
+  z-index: 8;
 }
 
 .main-box-1-wrapper {
@@ -34,20 +16,6 @@
   position: relative;
 }
 
-.burger-wrapper {
-  z-index: 8;
-  height: 52vh;
-  display: block;
-  position: absolute;
-  bottom: auto;
-  left: 0;
-  right: auto;
-}
-
-.link-burger-home {
-  transition: all 0.4s;
-}
-
 .link-burger-home:hover {
   transform: scale(0.95);
 }
@@ -55,34 +23,21 @@
 .image-2 {
   width: 90vh;
   height: 70vh;
-  object-fit: contain;
-  display: block;
   position: relative;
   top: -10vh;
-  bottom: 0;
   left: -15vh;
-  right: 0;
 }
 
 .box-1 {
   z-index: 19;
   width: 144.78vh;
   height: 29.18vh;
-  flex-direction: column;
-  justify-content: flex-end;
   margin-left: 71.89vh;
-  display: flex;
-  position: relative;
 }
 
 .link-block {
   z-index: 0;
   text-decoration: none;
-  position: relative;
-}
-
-.link-block:hover .cities-text-wrapper {
-  transform: translateY(0%);
 }
 
 .link-block:hover + .arrown-cities {
@@ -91,66 +46,28 @@
 
 .burger-club-wrapper {
   gap: 0.86vh;
-  align-items: center;
   margin-bottom: 0.88vh;
-  display: flex;
 }
 
 .div-block-14 {
   width: 4.32vh;
   height: 1.94vh;
-  background-image: url(../assets/icon-world.svg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.text-block {
-  color: #000;
-  font-family: "Helvetica Neue Condensed", sans-serif;
-  font-size: 1.4vh;
-  font-weight: 700;
-  line-height: 1.51vh;
-  text-decoration: none;
 }
 
 .cities-link-wrapper {
-  height: 18.69vh;
-  overflow: hidden;
-}
-
-.cities-text-wrapper {
-  transform: translateY(-50%);
-  transition: transform 0.3s ease-out;
+  width: 123.34vh;
+  /* height: 18.69vh; */
 }
 
 .vicio-cities {
-  width: 123.34vh;
-  height: 18.69vh;
-  background-image: url(../assets/vicio-cities.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: contain;
+  /* width: 123.34vh; */
+  /* height: 18.69vh; */
 }
 
 .arrown-cities {
   width: 1.94vh;
   height: 1.94vh;
-  background-image: url(../assets/arrow.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  left: 0;
-  right: auto;
   transition: transform 0.3s ease-out;
-}
-
-.box-2 {
-  height: 21.29vh;
-  position: relative;
 }
 
 .box-3 {
@@ -177,10 +94,6 @@
 .icon-arrow {
   width: 1.08vh;
   height: 1.08vh;
-  background-image: url(../assets/arrow.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: contain;
   margin-top: 0.32vh;
   margin-left: 0.32vh;
 }
@@ -279,41 +192,12 @@
 }
 
 .collection-list-3 {
+  column-gap: 0.43vh;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: flex-start;
   align-items: flex-start;
   display: flex;
-}
-
-.collection-item-5 {
-  height: 1.51vh;
-}
-
-.link-products {
-  color: #000;
-  text-transform: uppercase;
-  margin-right: 0.43vh;
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 1.08vh;
-  font-weight: 400;
-  line-height: 1.51vh;
-  text-decoration: none;
-  transition: border-color 0.2s;
-}
-
-.link-products:hover {
-  border-bottom: 1px solid #000;
-}
-
-.product-separator {
-  color: #000;
-  margin-left: 0.43px;
-  margin-right: 0.43vh;
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 1.08vh;
-  line-height: 1.51vh;
-  display: inline-block;
 }
 
 .collection-link-wrapper {
@@ -333,86 +217,17 @@
 .collection-text {
   width: 100%;
   height: 100%;
+  width: 70.96vh;
+  /* height: 10.96vh; */
   background-image: url(../assets/collection.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.box-2-text-wrapper {
-  text-align: right;
-  display: inline-block;
-  position: absolute;
-  top: 2.59vh;
-  bottom: auto;
-  left: auto;
-  right: 2.59vh;
-}
-
-.star-1 {
-  width: 3.45vh;
-  height: 4.21vh;
-  background-image: url(../assets/icon-star.svg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 6.7vh;
-  bottom: auto;
-  left: auto;
-  right: 20.75vh;
-}
-
-.star-2 {
-  width: 1.62vh;
-  height: 1.94vh;
-  background-image: url(../assets/icon-star.svg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 18.7vh;
-  bottom: auto;
-  left: auto;
-  right: 8.32vh;
-}
-
-.happy {
-  width: 3.24vh;
-  height: 3.24vh;
-  background-image: url(../assets/icon-happy.svg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  left: auto;
-  right: 3.02vh;
-}
-
 .box-5 {
   z-index: 0;
   gap: 2.16vh;
-  justify-content: space-between;
-  display: flex;
-  position: relative;
-}
-
-.picture-box-1 {
-  width: 38vh;
-  height: 44vh;
-  position: relative;
-}
-
-.image {
-  width: 38vh;
-  height: 44vh;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .burger-cities {
@@ -420,42 +235,23 @@
   width: 37.62vh;
   height: 52.97vh;
   background-image: url("../assets/burger-1.png");
-  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
-  position: absolute;
-  top: auto;
   bottom: -29.1vh;
-  left: auto;
   right: -17.5vh;
-  pointer-events: none;
 }
 
 .star-3 {
   width: 2.48vh;
   height: 3.13vh;
-  background-image: url(../assets/icon-star.svg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
   top: 11.4vh;
-  bottom: auto;
-  left: auto;
   right: 17.15vh;
 }
 
 .star-4 {
   width: 3.45vh;
   height: 4.21vh;
-  background-image: url(../assets/icon-star.svg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: auto;
   bottom: -7.5vh;
-  left: auto;
   right: -4vh;
 }
 
@@ -515,27 +311,6 @@
   align-self: flex-end;
   margin-left: 2.16vh;
   position: relative;
-}
-
-.w-background-video {
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-}
-
-.w-background-video > video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -100;
-  background-position: 50%;
-  background-size: cover;
-  margin: auto;
-  position: absolute;
-  top: -100%;
-  bottom: -100%;
-  left: -100%;
-  right: -100%;
 }
 
 .vicio-logo-video {
@@ -708,7 +483,6 @@
 .about-link-wrapper {
   width: 76.32vh;
   height: 14.27vh;
-  position: relative;
   overflow: hidden;
 }
 
@@ -725,13 +499,8 @@
   width: 76.32vh;
   height: 14.27vh;
   background-image: url(../assets/about-us.svg);
-  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.box-13 {
-  position: relative;
 }
 
 .pack {
@@ -750,52 +519,18 @@
 .home-little-star {
   width: 1.62vh;
   height: 1.94vh;
-  background-image: url("../assets/icon-star.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
   top: -10.2vh;
   right: -37.1vh;
 }
 
-.banner-wrapper {
-  width: 134vh;
-  overflow: hidden;
-}
-
-.banner-content {
-  width: 337.72vh;
-  display: flex;
-  animation: moving 12s linear infinite;
-}
-
-.banner {
-  width: 168.86vh;
-  height: 9.72vh;
-  background-image: url("../assets/burger-club-banner.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .div-block-27 {
-  z-index: 20;
   width: 77.18vh;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 1.62vh;
   margin-left: 39vh;
-  display: flex;
-  position: relative;
 }
 
 .text-block-3 {
-  color: #000;
-  text-transform: uppercase;
-  font-family: "Helvetica Neue", sans-serif;
   font-size: 1.08vh;
-  font-weight: 400;
   line-height: 1.51vh;
 }
 
@@ -803,64 +538,9 @@
   text-decoration: none;
 }
 
-.text-block-7 {
-  color: #000;
-  text-transform: uppercase;
-  font-family: "Helvetica Neue Condensed", sans-serif;
-  font-size: 1.4vh;
-  font-weight: 700;
-  line-height: 1.51vh;
-}
-
-.div-block-38 {
-  background-color: #000;
-}
-
-@keyframes moving {
-  0% {
-    -ms-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -ms-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-}
-
-.box-15 {
-  position: relative;
-}
-
 .div-block-28 {
   width: 25.08vh;
   height: 52.64vh;
-  background-image: url("../assets/Mask_group.png");
-  background-position: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
   bottom: -7vh;
   right: 0;
-}
-
-.background-video-2 {
-  z-index: 2;
-  width: 38vh;
-  height: 44vh;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  visibility: hidden;
-}
-
-.picture-box-1:hover .background-video-2 {
-  visibility: unset;
 }

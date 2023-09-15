@@ -1,0 +1,24 @@
+.collection-item-5 {
+  line-height: 0.5;
+}
+
+.link-products {
+  text-transform: uppercase;
+  margin-right: 0.43vh;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.08vh;
+  font-weight: 400;
+  line-height: 1.51vh;
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.link-products:hover {
+  border-bottom: 1px solid #000;
+}
+
+.product-separator {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.08vh;
+  line-height: 1.51vh;
+}
