@@ -2,11 +2,17 @@ import "./BurgerItem.css";
 
 function BurgerItem({ children }: { children: React.ReactNode }) {
   return (
-    <li role="listitem" className="collection-item-5">
-      <a href="/" className="link-products">
+    <li
+      role="listitem"
+      className="leading-[1.51vh] font-HelveticaNeue text-[1.08vh]"
+    >
+      <a
+        href="/"
+        className="uppercase hover:border-b hover:border-black mr-[0.43vh]"
+      >
         {children}
       </a>
-      <span className="product-separator">/</span>
+      <span>/</span>
     </li>
   );
 }

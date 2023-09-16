@@ -10,7 +10,7 @@ type Props = {
 
 function PictureBox({ imageSrc, videoSrc }: Props) {
   return (
-    <div className="picture-box group relative">
+    <div className="video-box group relative">
       <video
         loop
         muted

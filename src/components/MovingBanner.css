@@ -1,18 +1,4 @@
-.banner-wrapper {
-  width: 134vh;
-}
-
-.banner-content {
-  width: 337.72vh;
-  animation: moving 12s linear infinite;
-}
-
-.banner {
-  width: 168.86vh;
-  height: 9.72vh;
-}
-
-@keyframes moving {
+@keyframes infinite-banner {
   0% {
     transform: translateX(0);
   }

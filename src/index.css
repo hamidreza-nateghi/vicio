@@ -2,6 +2,10 @@
 /* @tailwind components; */
 @tailwind utilities;
 
+.action-button {
+  @apply font-Recoleta uppercase text-center font-bold rounded-full border border-black transition-[background-color] duration-200 hover:bg-black hover:text-white w-[10.81vh] pt-[1.39vh] pb-[1.19vh] text-[1.29vh] leading-[1.72vh];
+}
+
 .bg-arrow {
   @apply bg-contain bg-[url('assets/arrow.svg')];
 }
@@ -10,8 +14,16 @@
   @apply bg-contain bg-[url('assets/icon-star.svg')] bg-center absolute;
 }
 
+.bg-instagram {
+  @apply bg-contain bg-[url('assets/icon-instagram.svg')];
+}
+
 .text-block {
   @apply text-[1.4vh] uppercase font-HelveticaNeueCondensed font-bold leading-[1.51vh];
+}
+
+.video-box {
+  @apply w-[38vh] h-[44vh];
 }
 
 .row {
@@ -20,6 +32,12 @@
 
 .column {
   @apply flex flex-col gap-[2.16vh];
+}
+
+@layer utilities {
+  .rotate-z-90 {
+    transform: rotateZ(90deg);
+  }
 }
 
 @font-face {

@@ -10,13 +10,13 @@ function FooterLink({
   children,
 }: PropsWithChildren<Props>) {
   return (
-    <a href="/" className="footer-link-block group">
+    <a href="/" className="group">
       <div
-        className={`footer-link-text ${fontSize} uppercase font-HelveticaNeueCondensed font-bold`}
+        className={`leading-[1.2] ${fontSize} uppercase font-HelveticaNeueCondensed font-bold`}
       >
         {children}
       </div>
-      <div className="footer-link-line bg-black w-0 transition-[width] duration-[250ms] ease-out group-hover:w-full"></div>
+      <div className="h-[0.2vh] bg-black w-0 transition-[width] duration-[250ms] ease-out group-hover:w-full"></div>
     </a>
   );
 }

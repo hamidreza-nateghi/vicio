@@ -1,4 +1,3 @@
-import ActionButton from "./ActionButton";
 import "./Header.css";
 
 function Header() {
@@ -15,7 +14,9 @@ function Header() {
             The hottest burger of today is BBQ Bacon Cheeseburger
           </p>
         </div>
-        <ActionButton>Order now</ActionButton>
+        <a href="/" className="action-button">
+          Order now
+        </a>
       </div>
     </header>
   );
