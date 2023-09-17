@@ -34,12 +34,6 @@
   @apply flex flex-col gap-[2.16vh];
 }
 
-@layer utilities {
-  .rotate-z-90 {
-    transform: rotateZ(90deg);
-  }
-}
-
 @font-face {
   font-family: "Recoleta";
   src: url(assets/font/Recoleta-Regular.woff2) format("woff2"),

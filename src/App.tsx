@@ -1,14 +1,14 @@
 import "./App.css";
-import BottomBar from "./components/BottomBar";
-import Header from "./components/Header";
+import FooterBar from "./components/FooterBar";
+import HeaderBar from "./components/HeaderBar";
 import Viewport from "./components/Viewport";
 
 function App() {
   return (
     <>
-      <Header />
+      <HeaderBar />
       <Viewport />
-      <BottomBar />
+      <FooterBar />
     </>
   );
 }

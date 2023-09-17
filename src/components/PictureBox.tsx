@@ -1,5 +1,3 @@
-import "./PictureBox.css";
-
 type Props = {
   imageSrc: string;
   videoSrc: {

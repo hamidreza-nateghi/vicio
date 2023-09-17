@@ -1,5 +1,3 @@
-import "./CircularVicio.css";
-
 function CircularVicio() {
   return (
     <div className="w-[7.78vh] h-[7.78vh] relative">

@@ -1,5 +1,3 @@
-import "./BurgerItem.css";
-
 function BurgerItem({ children }: { children: React.ReactNode }) {
   return (
     <li

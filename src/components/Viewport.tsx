@@ -3,10 +3,8 @@ import Burger from "../assets/burger.png";
 import BurgerRotationHover from "../assets/burger-rotation-hover.gif";
 import Picture1 from "../assets/picture-1.jpeg";
 import FOTO1 from "../assets/FOTO-1.png";
-import qrInsta from "../assets/qr-insta.png";
 import VicioLogoMP4 from "../assets/VICIO_Logo-Web-transcode.mp4";
 import VicioLogoWebm from "../assets/VICIO_Logo-Web-transcode.webm";
-import IMG from "../assets/IMG.png";
 import IMG5 from "../assets/IMG-5.png";
 import VicioWeb01MP4 from "../assets/VICIO-Web-01-transcode.mp4";
 import VicioWeb01Webm from "../assets/VICIO-Web-01-transcode.webm";
@@ -14,12 +12,15 @@ import VicioWeb02MP4 from "../assets/VICIO-Web-02-transcode.mp4";
 import VicioWeb02Webm from "../assets/VICIO-Web-02-transcode.webm";
 import VicioWeb03MP4 from "../assets/VICIO-Web-03-transcode.mp4";
 import VicioWeb03Webm from "../assets/VICIO-Web-03-transcode.webm";
+
 import BurgerItem from "./BurgerItem";
 import PictureBox from "./PictureBox";
 import MovingBanner from "./MovingBanner";
 import FooterLink from "./FooterLink";
 import HoverStack from "./HoverStack";
 import CircularVicio from "./CircularVicio";
+import GiftDisplay from "./GiftDisplay";
+import SocialMediaQR from "./SocialMediaQR";
 
 function Viewport() {
   return (
@@ -62,6 +63,7 @@ function Viewport() {
                 <br />
                 @ganasdevicio
               </div>
+              <div className="z-20 absolute w-[31.89vh] h-[15.67vh] bg-[url('assets/Sticker-1b.png')] bg-contain top-[5.8vh] -right-[3.75vh]"></div>
               <div className="bg-star w-[3.45vh] h-[4.21vh] top-[6.7vh] right-[20.75vh]"></div>
               <div className="bg-star w-[1.62vh] h-[1.94vh] top-[18.7vh] right-[8.32vh]"></div>
               <div className="absolute bg-[url('assets/icon-happy.svg')] bg-contain bg-center w-[3.24vh] h-[3.24vh] bottom-0 right-[3.02vh]"></div>
@@ -92,11 +94,11 @@ function Viewport() {
                     <div className="w-[7.13vh] h-[3.13vh] bg-[url('assets/map.svg')] bg-contain"></div>
                   </div>
                   {/* <div className="collection-link-wrapper">
-                            <div className="collection-scroll-wrapper">
-                              <div className="collection-text"></div>
-                              <div className="collection-text"></div>
-                            </div>
-                          </div> */}
+                    <div className="collection-scroll-wrapper">
+                      <div className="collection-text"></div>
+                      <div className="collection-text"></div>
+                    </div>
+                  </div> */}
                   <HoverStack
                     width="w-[70.96vh]"
                     height="h-[10.96vh]"
@@ -127,7 +129,13 @@ function Viewport() {
             imageSrc={Picture1}
             videoSrc={{ mp4: VicioWeb01MP4, webm: VicioWeb01Webm }}
           />
-          <video loop autoPlay muted playsInline className="video-box">
+          <video
+            loop
+            autoPlay
+            muted
+            playsInline
+            className="video-box object-cover"
+          >
             <source src={VicioWeb02MP4} type="video/mp4" />
             <source src={VicioWeb02Webm} type="video/webm" />
           </video>
@@ -140,36 +148,19 @@ function Viewport() {
       <div className="column">
         <div className="flex">
           <div className="z-20 text-right w-[12vh] h-[31.24vh] self-end">
-            <a href="/">
-              <div className="text-block">
-                Daily dose
-                <br />
-                of Vicio here
-              </div>
-              <img src={qrInsta} className="w-[8.1vh] h-[8.1vh] mt-[2.16vh]" />
-              <div className="flex justify-end items-center mt-[0.86vh] gap-[1.29vh]">
-                <div className="bg-arrow w-[3.35vh] h-[3.35vh]"></div>
-                <div className="bg-instagram w-[3.67vh] h-[3.67vh]"></div>
-              </div>
-            </a>
+            <SocialMediaQR />
           </div>
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-[51.67vh] h-[31.24vh] self-end ml-[2.16vh]"
+            className="w-[51.67vh] h-[31.24vh] self-end mx-[2.16vh]"
           >
             <source src={VicioLogoMP4} type="video/mp4" />
             <source src={VicioLogoWebm} type="video/webm" />
           </video>
-          <div className="flex flex-col justify-between ml-[2.16vh]">
-            <img src={IMG} loading="lazy" className="w-[26.7vh] h-[32.75vh]" />
-            <div className="flex gap-[0.86vh]">
-              <div className="bg-[url('assets/bar-code.svg')] bg-contain w-[11.02vh] h-[2.91vh]"></div>
-              <div className="text-block">And Nike gave it to us</div>
-            </div>
-          </div>
+          <GiftDisplay />
           <div className="ml-[1vh]">
             <a href="/" className="inline-block group peer">
               <div className="w-[8.64vh] h-[20.86vh] overflow-hidden">
@@ -179,7 +170,7 @@ function Viewport() {
                 </div>
               </div>
             </a>
-            <div className="mt-[0.86vh] bg-arrow w-[3.35vh] h-[3.35vh] transition-[transform] duration-300 ease-out peer-hover:-rotate-90"></div>
+            <div className="bg-arrow w-[3.35vh] h-[3.35vh] transition-[transform] duration-300 ease-out peer-hover:-rotate-90"></div>
             <div className="mb-[2.7vh]"></div>
             <CircularVicio />
           </div>

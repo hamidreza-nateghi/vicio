@@ -1,5 +1,3 @@
-import "./HoverStack.css";
-
 function HoverStack({
   width,
   height,
